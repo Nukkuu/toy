@@ -1,10 +1,10 @@
-$(document).ready(function() {
+var grid = document.querySelector('.grid');
+var msnry;
 
-	var $container = $(".masonry-container");
-	$container.imagesLoaded(function () {
-		$container.masonry({
-			columnWidth: ".item",
-			itemSelector: ".item"
-		});
-	});
+imagesLoaded( grid, function() {
+  msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 });

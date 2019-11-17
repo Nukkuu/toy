@@ -441,25 +441,16 @@
 						Our Gallery
 					</em>
 				</h3>
-				<div id="my-grid" class="grid-padding">
-					<div class="row">
-						<div class="col-sm-3 col-md-6 col-lg-3">
-								<div class="row"><img class="fit-image" src="img/doll6.png" alt=""></div>
-								<div class="row"><img class="fit-image" src="img/doll3.png" alt=""></div>
-						</div>
-						<div class="col-sm-3 col-md-6 col-lg-3">
-								<div class="row"><img class="fit-image" src="img/doll4.png" alt=""></div>
-								<div class="row"><img class="fit-image" src="img/doll5.png" alt=""></div>
-						</div>
-						<div class="col-sm-3 col-md-6 col-lg-3">
-								<div class="row"><img class="fit-image" src="img/doll3.png" alt=""></div>
-								<div class="row"><img class="fit-image" src="img/doll6.png" alt=""></div>
-						</div>
-						<div class="col-sm-3 col-md-6 col-lg-3">
-								<div class="row"><img class="fit-image" src="img/doll1.png" alt=""></div>
-								<div class="row"><img class="fit-image" src="img/doll4.png" alt=""></div>	
-						</div>
-					</div>
+				<div class="grid">
+				  <div class="grid-sizer"></div>
+				  <div class="grid-item"><img src="img/doll3.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll4.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll5.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll2.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll6.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll1.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll5.png" alt=""></div>
+				  <div class="grid-item"><img src="img/doll4.png" alt=""></div>
 				</div>
 				<a class="viewmore" href="#">
 					View More
@@ -472,8 +463,8 @@
 					Have a Question?
 				</h3>
 				<div class="form-group">
-				  <label for="usr"></label>
-				  <input type="text" class="form" id="usr">
+				  <label for="email">Enter your E-mail:</label>
+					<input type="email" id="email" pattern=".+@globex.com" size="25" required>
 				</div>
 				<a class="submit" href="#">
 					Submit
@@ -481,7 +472,7 @@
 				<p>
 					Or just email on
 				</p>
-				<a href="#">
+				<a class="email" href="#">
 					handmade@gmail.com
 				</a>
 			</div>
@@ -550,6 +541,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/common.js"></script>
 	<script src="https://kit.fontawesome.com/b43f20a297.js" crossorigin="anonymous"></script>
 </body>
 </html>
